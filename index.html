@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Elegance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Barbershop Elegance</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Diensten</a></li>
+            <li><a href="#about">Over Ons</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="menu-toggle">&#9776;</button>
+</header>
+
+<!-- Hero Sectie met achtergrondafbeelding -->
+<section id="home" class="hero">
+    <img src="images/hero-barbershop.jpg" alt="Barbershop sfeer" class="hero-image">
+    <div class="hero-content">
+        <h1>Welkom bij Barbershop Elegance</h1>
+        <p>De beste kapsels en baardverzorging in de stad.</p>
+        <button id="open-appointment-modal">Maak een afspraak</button>
+    </div>
+</section>
+
+<!-- Diensten Sectie met Afbeeldingen -->
+<section id="services">
+    <h2>Onze Diensten</h2>
+    <div class="services-grid">
+        <div class="service">
+            <img src="images/service-haircut.jpg" alt="Knippen">
+            <p>Knippen - €25</p>
+        </div>
+        <div class="service">
+            <img src="images/service-beardtrim.jpg" alt="Baard trimmen">
+            <p>Baardtrim - €15</p>
+        </div>
+        <div class="service">
+            <img src="images/service-shave.jpg" alt="Scheren">
+            <p>Scheren - €20</p>
+        </div>
+        <div class="service">
+            <img src="images/service-styling.jpg" alt="Haarstyling">
+            <p>Haarstyling - €30</p>
+        </div>
+    </div>
+</section>
+
+<!-- Over Ons Sectie -->
+<section id="about">
+    <h2>Over Ons</h2>
+    <p>Barbershop Elegance is een traditionele en moderne kapsalon waar vakmanschap centraal staat.</p>
+</section>
+
+<!-- Contact Sectie -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Adres: Hoofdstraat 123, Amsterdam</p>
+    <p>📞 Telefoon: 06-12345678</p>
+</section>
+
+<!-- Afspraak Modal (Popup) -->
+<div id="appointment-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <h2>Maak een afspraak</h2>
+            <form id="appointment-form">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" required>
+
+                <label for="date">Datum:</label>
+                <input type="date" id="date" required>
+
+                <label for="service">Kies een dienst:</label>
+                <select id="service">
+                    <option>Knippen - €25</option>
+                    <option>Baardtrim - €15</option>
+                    <option>Scheren - €20</option>
+                    <option>Haarstyling - €30</option>
+                </select>
+
+                <button type="submit">Bevestigen</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Barbershop Elegance - Alle rechten voorbehouden</p>
+</footer>
+
+<script defer src="js/script.js"></script>
+</body>
+</html>
